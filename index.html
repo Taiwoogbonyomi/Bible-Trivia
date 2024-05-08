@@ -8,11 +8,11 @@
 </head>
 <body>
     <header id="logo-header">
-        <img id="logo" src="assets/images/bible img.png" alt="Bible image with a white pigeon"
+        <img id="logo" src="assets/images/Bible-Quiz.png" alt="Bible Quiz logo"
     </header>
     
     <!--Start Button-->
-    <div class="start-btn">
+    <div class="start-screen">
         <button class="btn glow-effect" id="start-btn" aria-label="close">Start Quiz
             <svg class="glow-container"> <rect height="1" width="1" stroke-linecap="round" class="glow-blur"></rect>
                 <rect height="1" width="1" stroke-linecap="round" class="glow-line"></rect></svg>
@@ -25,7 +25,7 @@
             <span>Rules of the Quiz</span>
         </div>
         <div class="rule-list"></div>
-        <div class="rule">1. You will have only<span>15 seconds</span> per question</div>
+        <div class="rule">1. You will have only<span> 15 seconds</span> per question</div>
         <div class="rule">2. You can only select one answer</div>
         <div class="rule">3. You cannot change your answer once you have selected it</div>
     </div> 
@@ -42,14 +42,23 @@
             <div class="time-text">Time left</div>
             <div class="time-sec">15s</div>
         </div>
-    </div>    
+      
+        <div class="que-container">
+        <!--Questions and option-list will display here-->
+        </div> 
+        <button id="next-que-btn">Next Que</button>
+    </div>
+    <div class="score-container hide">
+        <div id="player-score">Player Score</div>
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue
+                <svg class="glow-container"> <rect height="1" width="1" stroke-linecap="round" class="glow-blur"></rect>
+                    <rect height="1" width="1" stroke-linecap="round" class="glow-line"></rect></svg>
+            </button>
+        </div>
+    </div>
     
-
-
-
-
-
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>
